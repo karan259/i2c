@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>librnr :: roadnarrows</title>
+    <title>i2c :: roadnarrows</title>
 
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
@@ -17,32 +17,32 @@
       <header>
         <h1 style="margin-left:-8px">
        <a href="http://roadnarrows.com"><img src="http://www.roadnarrows.com/img/navbar/RNLogo.png" width="100px" style="margin-left:-100px; margin-bottom:-70px"></img></a>
-        librnr -
+        i2c -
         <a href="http://roadnarrows.com/distro/" style="padding-left:5px">RN DISTRO<img src="images/go_back_icon.png" width="16px"></img></a>
         </h1>
         <p>RoadNarrows Robotics common library</p>
 
-        <p class="view"><a href="http://roadnarrows.com/distro/librnr/pkg/latest/srcdoc" target="_blank">View API and Source Documentation</a></p>
+        <p class="view"><a href="http://roadnarrows.com/distro/i2c/pkg/latest/srcdoc" target="_blank">View API and Source Documentation</a></p>
 
 
         <ul>
-          <li><a href="https://github.com/roadnarrows-robotics/librnr/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/roadnarrows-robotics/librnr/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/roadnarrows-robotics/librnr">View On <strong>GitHub</strong></a></li>
+          <li><a href="https://github.com/roadnarrows-robotics/i2c/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/roadnarrows-robotics/i2c/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/roadnarrows-robotics/i2c">View On <strong>GitHub</strong></a></li>
         </ul>
 
       <p class="view">
-        <a href="http://colorado.roadnarrows.com:40105/job/librnr/"><img src="http://colorado.roadnarrows.com:40105/buildStatus/icon?job=librnr" alt="Build Status" style="margin-bottom:-2px"></a>
-        <a href="http://roadnarrows.com/distro/librnr/pkg/" style="padding-left:20px">ARCHIVE</a>
+        <a href="http://colorado.roadnarrows.com:40105/job/i2c/"><img src="http://colorado.roadnarrows.com:40105/buildStatus/icon?job=i2c" alt="Build Status" style="margin-bottom:-2px"></a>
+        <a href="http://roadnarrows.com/distro/i2c/pkg/" style="padding-left:20px">ARCHIVE</a>
       </p>
       </header>
       <section>
 
 <h2><a name="description" class="anchor" href="#description"><span class="octicon octicon-link"></span></a>Description:</h2>
 
-<p><strong><em>librnr</em></strong> provides an extensive set of utilities (e.g. logging, and options parsing) that unify all RoadNarrows software packages.</p>
+<p><strong><em>i2c</em></strong> provides an extensive set of utilities (e.g. logging, and options parsing) that unify all RoadNarrows software packages.</p>
 
-<p>Check out examples in the <a href="http://www.roadnarrows.com/distro/librnr/pkg/latest/srcdoc/pages.html" target="_blank">Source Documentation</a></p>
+<p>Check out examples in the <a href="http://www.roadnarrows.com/distro/i2c/pkg/latest/srcdoc/pages.html" target="_blank">Source Documentation</a></p>
 
 <hr>
 
@@ -54,14 +54,14 @@
 
 <div class="highlight highlight-bash"><pre>wget -O - http://roadnarrows.com/packages.roadnarrows.key <span class="p">|</span> sudo apt-key add -
 sudo sh -c "echo 'deb [arch=amd64] http://roadnarrows.com/distro/apt precise main' > /etc/apt/sources.list.d/rnr.sources.list" 
-sudo apt-get update <span class="p">&amp;&amp;</span> sudo apt-get install librnr-dev
+sudo apt-get update <span class="p">&amp;&amp;</span> sudo apt-get install i2c-dev
 </pre></div>
 
 <h3>
 <a name="from-source-using-cmake" class="anchor" href="#from-source-using-cmake"><span class="octicon octicon-link"></span></a>From source (using CMake)</h3>
 
-<div class="highlight highlight-bash"><pre>git clone http://github.com/roadnarrows-robotics/librnr
-<span class="nb">cd </span>librnr
+<div class="highlight highlight-bash"><pre>git clone http://github.com/roadnarrows-robotics/i2c
+<span class="nb">cd </span>i2c
 mkdir build
 <span class="nb">cd </span>build
 cmake ..
