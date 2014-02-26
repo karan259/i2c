@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>I2c by roadnarrows-robotics</title>
+    <title>librnr :: roadnarrows</title>
 
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
@@ -15,54 +15,61 @@
   <body>
     <div class="wrapper">
       <header>
-        <h1>I2c</h1>
-        <p>RoadNarrows Robotics i2c library.</p>
+        <h1 style="margin-left:-8px">
+       <a href="http://roadnarrows.com"><img src="http://www.roadnarrows.com/img/navbar/RNLogo.png" width="100px" style="margin-left:-100px; margin-bottom:-70px"></img></a>
+        librnr -
+        <a href="http://roadnarrows.com/distro/" style="padding-left:5px">RN DISTRO<img src="images/go_back_icon.png" width="16px"></img></a>
+        </h1>
+        <p>RoadNarrows Robotics common library</p>
 
-        <p class="view"><a href="https://github.com/roadnarrows-robotics/i2c">View the Project on GitHub <small>roadnarrows-robotics/i2c</small></a></p>
+        <p class="view"><a href="http://roadnarrows.com/distro/librnr/pkg/latest/srcdoc" target="_blank">View API and Source Documentation</a></p>
 
 
         <ul>
-          <li><a href="https://github.com/roadnarrows-robotics/i2c/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/roadnarrows-robotics/i2c/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/roadnarrows-robotics/i2c">View On <strong>GitHub</strong></a></li>
+          <li><a href="https://github.com/roadnarrows-robotics/librnr/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/roadnarrows-robotics/librnr/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/roadnarrows-robotics/librnr">View On <strong>GitHub</strong></a></li>
         </ul>
+
+      <p class="view">
+        <a href="http://colorado.roadnarrows.com:40105/job/librnr/"><img src="http://colorado.roadnarrows.com:40105/buildStatus/icon?job=librnr" alt="Build Status" style="margin-bottom:-2px"></a>
+        <a href="http://roadnarrows.com/distro/librnr/pkg/" style="padding-left:20px">ARCHIVE</a>
+      </p>
       </header>
       <section>
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+<h2><a name="description" class="anchor" href="#description"><span class="octicon octicon-link"></span></a>Description:</h2>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+<p><strong><em>librnr</em></strong> provides an extensive set of utilities (e.g. logging, and options parsing) that unify all RoadNarrows software packages.</p>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+<p>Check out examples in the <a href="http://www.roadnarrows.com/distro/librnr/pkg/latest/srcdoc/pages.html" target="_blank">Source Documentation</a></p>
 
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+<hr>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+<h2>
+<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation:</h2>
 
 <h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+<a name="via-apt-get-currently-available-for-ubuntu-1204-64-bit" class="anchor" href="#via-apt-get-currently-available-for-ubuntu-1204-64-bit"><span class="octicon octicon-link"></span></a>Via apt-get (currently available for Ubuntu 12.04 64-bit)</h3>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+<div class="highlight highlight-bash"><pre>wget -O - http://roadnarrows.com/packages.roadnarrows.key <span class="p">|</span> sudo apt-key add -
+sudo sh -c "echo 'deb [arch=amd64] http://roadnarrows.com/distro/apt precise main' > /etc/apt/sources.list.d/rnr.sources.list" 
+sudo apt-get update <span class="p">&amp;&amp;</span> sudo apt-get install librnr-dev
+</pre></div>
 
 <h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+<a name="from-source-using-cmake" class="anchor" href="#from-source-using-cmake"><span class="octicon octicon-link"></span></a>From source (using CMake)</h3>
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+<div class="highlight highlight-bash"><pre>git clone http://github.com/roadnarrows-robotics/librnr
+<span class="nb">cd </span>librnr
+mkdir build
+<span class="nb">cd </span>build
+cmake ..
+make <span class="p">&amp;&amp;</span> make install
+</pre></div>
       </section>
       <footer>
-        <p>This project is maintained by <a href="https://github.com/roadnarrows-robotics">roadnarrows-robotics</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+        <p>Maintained by: <a href="https://github.com/roadnarrows-robotics">roadnarrows-robotics</a> <img src="http://www.roadnarrows.com/img/navbar/RNLogo.png" width="18px" style="margin-bottom:-3px"></img></p>
       </footer>
     </div>
     <script src="javascripts/scale.fix.js"></script>
